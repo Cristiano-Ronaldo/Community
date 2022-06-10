@@ -1,0 +1,406 @@
+/* section header starts */
+.header {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 1000;
+    background: var(--while);
+    padding: 1rem 7%;
+}
+.header a img {
+    height: 4.7rem;
+    width: 10.6rem;
+    object-fit: contain;
+}
+.header .navbar a {
+    font-size: 2.2rem;
+    font-weight: 500;
+    color: var(--black);
+    padding-right: 3.3rem;
+}
+.header .info {
+    gap: 4rem;
+}
+.header .info p {
+    font-size: 1.8rem;
+}
+.header .info .user i {
+    padding: 1.6rem;
+    border-radius: 50%;
+    background: var(--bg-color);
+    margin-right: 2rem;
+    cursor: pointer;
+}
+.header .info .user #menu-bars {
+    display: none;
+}
+
+/* section header ends */
+.home .box-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(27rem, 1fr));
+    background-color: var(--bg-color);
+    min-height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+.home .box-container .box {
+    padding: 14.1rem 6.2rem 16.2rem;
+}
+.home .box-container .box h2 {
+    font-size: 4.1rem;
+    font-weight: 700;
+}
+.home .box-container .box p {
+    font-size: 2.8rem;
+    font-weight: 400;
+    color: var(--black);
+    padding: 1rem 0 3rem;
+}
+.home .box-container .box form   {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 6.2rem;
+    max-width: 51.4rem;
+    border: 2px solid rgba(0, 0, 0, 0.4);
+    border-radius: 1rem;
+}
+.home .box-container .box form #hot-search{
+    width: 100%;
+    height: 100%;
+    border-radius: 1rem;
+    font-size: 1.8rem;
+    font-weight: 400;
+    padding-left: 1.7rem;
+}
+.home .box-container .box form label {
+    background: var(--blue);
+    border-radius: 8px;
+    padding: 2rem 2.8rem;
+    height: 100%;
+    color: var(--while);
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+.home .box-container img {
+    width: 100%;
+    object-fit: contain;
+}
+/* section count starts */
+.count .box-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(27rem, 1fr));
+    gap: 2.5rem;
+    align-items: flex-start;
+}
+.count .box-container .box {
+    display: flex;
+    align-items: center;
+    border: 1.5px solid #F2F2F2;
+    border-radius: 5px;
+    gap: 1.5rem;
+}
+.count .box-container .box img {
+    max-width: 16.7rem;
+    height: 13.6rem;
+    object-fit: contain;
+    left: 0;
+}
+.count .box-container .box .content h2{
+    font-size: 1.8rem;
+    font-weight: 500;
+}
+.count .box-container .box .content p {
+    font-size: 1.4rem;
+    color: var(--black-light);
+}
+/* section count ends */
+
+/* price section starts */
+.price .row  {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+.price .row .content {
+    flex: 1 1 28%;
+    background: var(--bg-color);
+    border-radius: 5px;
+}
+.price .row .content .item {
+    padding: 2rem 1.5rem;
+}
+.price .row .content .item:hover{
+    background-color: var(--blue);
+    color: var(--while);
+    cursor: pointer;
+}
+.price .row .content .image {
+    display: flex;
+    align-items: center;
+    gap: 1.9rem;
+}
+.price .row .content .image img {
+    width: 3.6rem;
+    object-fit: contain;
+}
+.price .row .content .image p {
+    font-size: 2.2rem;
+}
+.price .row .content i {
+    right: 0;
+    font-size: 1.5rem;
+}
+.price .box-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 26.5rem);
+    align-items: flex-start;
+    justify-content: center;
+    flex: 1 1 70%;
+    gap: 2rem;
+}
+.price .box-container .box {
+    background: #F7F7F7;
+    border-radius: 5px 5px 0px 0px;
+    cursor: pointer;
+}
+.price .box-container .box .image {
+    display: flex;
+    justify-content: center;
+}
+.price .box-container .box .image img {
+    width: 12.8rem;
+    object-fit: contain;
+    align-items: center;
+    padding: 2.5rem 1.7rem;
+}
+.price .box-container .box .content {
+    background-color: var(--while);
+    padding: 2rem 4rem;
+    box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+}
+.price .box-container .box .content h3 {
+    font-size: 1.7rem;
+    font-weight: 500;
+}
+.price .box-container .box .content .flex .stars i {
+    color: var(--yelow);
+    padding: 2.4rem 0;
+}
+.price .box-container .box .content .flex p {
+    color: var(--blue);
+    font-size: 2rem;
+}
+.price .page {
+    display: flex;
+    justify-content: flex-end;
+    gap: 0.8rem;
+    padding-top: 4rem;
+}
+.price .page a {
+    padding: 1rem 1.2rem;
+    background: var(--while);
+    color: var(--black);
+    border-radius: 4px;
+    font-size: 1.4rem;
+}
+.price .page a:first-child,
+.price .page a:last-child {
+    background: #919EAB;
+    opacity: 0.5;
+    border-radius: 4px;
+    color: var(--while);
+}
+.price .page .active{
+    color: var(--blue);
+    border: 1px solid #4200FF;
+    border-radius: 4px;
+}
+/* price section ends */
+
+/* counter section starts */
+.counter .box-container .box {
+    max-height: 14rem;
+    cursor: pointer;
+}
+.counter .box-container .box .image {
+    width: 15.6rem;
+    height: 13.9rem;
+}
+.counter .box-container .box .image img {
+    padding: 3.8rem 0.6rem;
+    width: 100%;
+    object-fit: contain;
+}
+.counter .box-container .box .image span {
+    font-size: 3.6rem;
+    font-weight: 700;
+    padding: 4.8rem 1.6rem;
+    display: block;
+}
+/* counter section ends */
+
+/* avtomabil section starts */
+.avtomabil .box-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(27rem, 1fr));
+    align-items: flex-start;
+}
+.avtomabil .box-container .box {
+    padding: 8rem 4rem;
+    background: var(--bg-color);
+}
+.avtomabil .box-container .box h2 {
+    font-size: 3.6rem;
+    font-weight: 700;
+}
+.avtomabil .box-container .box .btn {
+    padding: 1.4rem 3.2rem;
+    display: block;
+    margin-top: 4rem;
+    border: 2px solid #000000;
+    border-radius: 5px;
+    font-size: 2.8rem;
+    cursor: pointer;
+}
+.avtomabil .box-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    background-color: var(--bg-color);
+    border-radius: 0.5rem ;
+}
+/* avtomabil section ends */
+
+/* songi section starts */
+.songi .list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.songi .list h1,
+.brendlar h1 {
+    font-size: 3.2rem;
+    font-weight: 500;
+}
+.songi .list p {
+    gap: 1.6rem;
+    font-size: 2.8rem;
+    font-weight: 400;
+    color: var(--black);
+}
+.songi .list p i {
+    font-size: 2rem;
+}
+.songi .box-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(27rem, 1fr));
+    align-items: flex-start;
+    gap: 2rem;
+    padding-top: 3rem;
+}
+.songi .box-container .box {
+    overflow: hidden;
+    box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    cursor: pointer;
+}
+.songi .box-container .image {
+    display: flex;
+    justify-content: center;
+    background: var(--bg-color);
+    border-radius: 5px 5px 0px 0px;
+}
+.songi .box-container .image img {
+    object-fit: contain;
+    height: 17rem;
+    padding: 2.3rem;
+}
+.songi .box-container .content {
+    padding: 2rem;
+}
+.songi .box-container .content h2 {
+    font-size: 1.7rem;
+    font-weight: 500;
+}
+.songi .box-container .content .flex .stars {
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
+    padding: 2.5rem 0;
+}
+.songi .box-container .content .flex .stars i {
+    color: var(--yelow);
+    font-size: 1.5rem;
+}
+.songi .box-container .content .flex p {
+    font-size: 2rem;
+    color: var(--blue);
+}
+/* songi section ends */
+
+/* brenflar section starts */
+.brendlar .box-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(27rem, 1fr));
+    align-items: flex-start;
+    gap: 1.6rem;
+    padding-top: 3rem;
+    padding-bottom: 7rem;
+}
+.brendlar .box-container .box {
+    border-radius: 0.5rem;
+    background: var(--bg-color);
+    padding: 3rem 10rem;
+}
+.brendlar .box-container .box  img {
+    height: 8rem;
+    object-fit: contain;
+    width: 100%;
+}
+.brendlar .box-container .box p {
+    font-size: 3.2rem;
+    font-weight: 700;
+    display: flex;
+    justify-content: center;
+}
+
+/* brenflar section ends */
+
+/* footer section starts */
+.footer {
+    background: #2F2F2F;
+}
+.footer-list {
+    padding: 4rem 7%;
+}
+.footer .box-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(27rem, 1fr));
+    color: var(--while);
+    font-weight: 500;
+}
+.footer .box-container .box  h2{
+    font-size: 2.4rem;
+    font-weight: 700;
+    padding-top: 2rem;
+}
+.footer .box-container .box p {
+    padding-top: 2rem;
+    font-size: 2rem;
+    font-weight: 500;
+}
+.footer .box-container .box .social {
+    padding-top: 2.4rem;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 2.5rem;
+}
+.footer .box-container .box .social i {
+    font-size: 2.5rem;
+}
+/* footer section ends */

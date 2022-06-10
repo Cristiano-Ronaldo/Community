@@ -1,0 +1,72 @@
+@media(max-width:1200px) {
+    .header .info p {
+        display: none;
+    }
+}
+
+@media(max-width: 991px ) {
+    html {
+        font-size: 55%;
+    }
+    .header {
+        padding: 1rem 2rem;
+    }
+    
+}
+
+@media(max-width: 768px ) {
+    .header .info .user #menu-bars {
+        display: inline-block;
+    }
+    .header .navbar {
+        position: absolute;
+        top: 100%;
+        right: 0;
+        left: 0;
+        background-color: var(--while);
+        border-top: 1px solid rgba(0, 0, 0, 0.2);
+        border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+        padding: 1rem;
+        clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+    }
+    .header .navbar.active {
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+    }
+    .header .navbar a {
+        display: block;
+        padding: 1.5rem;
+        margin: 1rem;
+        font-size: 2rem;
+        background: #eee;
+    }
+    .header .info .user i {
+        margin-right: 0.3rem;
+    }
+    .home .box-container .box form {
+        max-width: 50rem;
+    }
+    .price .box-container {
+        grid-template-columns: repeat(auto-fit, minmax(27rem, 1fr));
+    }
+    .price .page {
+        justify-content: center;
+    }
+    .footer-list {
+        display: flex;
+        justify-content: center;
+    }
+    .footer .box-container .box .social {
+        justify-content: center;
+    }
+}
+@media (min-width: 451px) and (max-width: 767px ) {
+    .home .box-container .box form {
+        width: 40rem;
+    }
+}
+@media(max-width: 450px ){
+    html{
+        font-size: 50%;
+    }
+    
+}
